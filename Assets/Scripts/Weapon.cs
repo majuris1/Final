@@ -29,7 +29,8 @@ public class Weapon : MonoBehaviour
 		rigidbody2D.isKinematic = true;
 		rigidbody2D.velocity = new Vector2();
 		transform.parent = player.transform;
-		transform.localScale = new Vector3(.05f, .05f);
-		transform.localPosition = new Vector3(.05f, .05f);
+		transform.localScale = new Vector3(.5f, .5f);
+		transform.localPosition = new Vector3(.5f, .5f);
+		player.AddWeapon(this);
 	}
 }
